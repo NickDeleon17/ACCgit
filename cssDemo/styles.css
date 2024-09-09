@@ -1,0 +1,65 @@
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #bfe3e3;
+}
+/* shorthand div default this calls div not including <p> tag */
+div{
+    border: #000000 solid 10px;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+/* div default */
+div p{
+    border-radius: 25px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 10px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* imported font from google below */
+    font-family: "Cinzel", serif;
+
+    
+    /* set margin to create space. (This is how you make a break) */
+
+    /* margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px; */
+    margin: 10px 20px 10px 20px; /* short hand for margin (top left bottom right */
+
+    /* padding is space inside between content and margin */
+    padding: 25px;
+}
+/* set standard display of content */
+p{
+    display: inline-block;
+}
+/* aligning text nth child (get first p tag only and change alignment */
+p:nth-child(1){
+    text-align: center;
+    width: 25%;
+}
+/* adjust img size by calling id(#img_container) */
+#img_container{
+    width: 25%; /*percent of window*/
+    height: 200px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+i.fa-solid{
+    color: #513f08
+}
+
+i .fa-solid{
+    color: rgb(255, 64, 47)
+}
+
+
