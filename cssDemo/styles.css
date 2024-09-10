@@ -49,13 +49,21 @@ p:nth-child(1){
     width: 25%; /*percent of window*/
     height: 200px;
 }
+
+/* pseudoclass  */
+#img_container:hover{
+    border-color: pink;
+}
+
 img{
     width: 100%;
     height: 100%;
 }
 
 i.fa-solid{
-    color: #513f08
+    color: #513f08;
+    font-size: 38px;
+    font-weight: 600;
 }
 
 i .fa-solid{
