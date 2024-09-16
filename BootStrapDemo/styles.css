@@ -1,0 +1,22 @@
+/* .alert-success{
+    background-color: lime !important;
+} */
+
+h1{
+    color: slategray;
+}
+.container{
+    text-align: center;
+    font-style: italic;
+    font-size: larger;
+}
+
+.buttons {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  

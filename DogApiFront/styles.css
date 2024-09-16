@@ -1,0 +1,16 @@
+h1{
+font-family: fantasy;
+font-size: 40px;
+text-align: center;
+color: white;
+}
+
+button{
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(205, 143, 238);
+}
+
+body{
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet)
+}

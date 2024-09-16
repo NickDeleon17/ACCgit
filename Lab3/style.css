@@ -76,7 +76,7 @@ a:link {
   } 
 
   /* <!-- 16. Add a 20px margin to all <div> elements --> */
-  div{
+div{
     margin: 20px;
 }
 
