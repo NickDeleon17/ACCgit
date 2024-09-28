@@ -22,15 +22,9 @@ const App = () => {
       <Greeting name={"Nick"} />
       <CardContainer children={userArray}/>
 
-{/*this works too wehn placed within the CardContainer open and close tags*/}
+{/*this works too when placed between the CardContainer open and close tags*/}
       {/* {userArray} */}
-
-{/* Hard code from part 3 */}
-      {/* <UserCard name="Bob" age={30} />
-        <UserCard name="Charlie" age={35} />
-        <UserCard name="Alice" age={25} /> */}
-        
-    {/* // </CardContainer> */}
+{/* // </CardContainer> */}
     </div>
   );
 };
