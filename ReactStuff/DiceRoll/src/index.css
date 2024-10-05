@@ -1,0 +1,38 @@
+:root {
+  background-image: url(https://pbs.twimg.com/media/C-wkR9UWsAA-6em.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+i{
+  font-size: 100px;
+  margin: 10px; 
+  color: #81D8D0;
+}
+
+h1 {
+  font-size: 4.0em;
+  line-height: 1.1;
+  color: #C2DCD1;
+}
+
+h2{
+  font-size: 3.7em;
+  color: #81D8D0;
+  ;
+}
+
+button {
+  border-radius: 20px;
+  padding: 0.6em 1.2em;
+  font-size: 1.4em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #C2DCD1;
+  cursor: grab;
+  transition: border-color 0.25s;
+}
+
