@@ -10,8 +10,8 @@ import axios from 'axios'
 import Moviecard from './component/movieCard';
 
 
-
 function App() {
+  const{ VITE_TMDB_API_TOKEN } = process.env;
   const [movies, setMovies] = useState([])
   const baseurl="https://api.themoviedb.org/3"
   const handleClick=() =>{
@@ -22,13 +22,13 @@ function App() {
       params: {language: 'en-US', page: '1'},
       headers: {
         accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZWViYmUyNTg3OThjM2ZiODg5Yzg1NmQ2ZDQwNzExYyIsIm5iZiI6MTcyNzg3OTE2Ni4yMzE0MzYsInN1YiI6IjY2ZmQ1NzJiZTI2YTUzYzEyMjU5NjE1YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.wWa5J1mFVlzlRi3LBKJ0CLOIaq6aC2Ts7Nr-E9sfBAE'
+        Authorization: `Bearer ${VITE_TMDB_API_TOKEN}`
       }
     };
 
     axios(options)
     .then(response => {
-      // console.log(response)
+      console.log(response)
       // response.data.results => array of movie objects
       let movieArray = response.data.results.map((movie)=> {
        return <Moviecard doggy ={movie}/>
