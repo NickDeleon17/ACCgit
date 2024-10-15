@@ -1,0 +1,83 @@
+:root {
+  background-image: url(https://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2013/04/spaceballs_1280.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#dataTable{
+  min-width: 1200px;
+  background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*nv_LrLfy5B6suWwmbSQw3w.jpeg); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* opacity: .6; */
+  color: black;
+  font-size: 24px;
+}
+#headRow{
+  background-color: ghostwhite;
+  opacity: .7;
+}
+
+th, td{
+  padding: 16px;
+  text-align: left;
+  border-bottom: 3px solid black;
+}
+
+tr:hover{
+  background-color: #81D8D0;
+  background-color: ghostwhite;
+  opacity: .7;
+
+}
+
+#cells{
+  font-size: 22px;
+  text-align: left;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: .45em 1.2em;
+  margin: 1em;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: #81D8D0;
+  color: black;
+  cursor: crosshair;
+  transition: border-color 0.25s;
+  font-family: cursive;
+}
+button:hover {
+  border-color: black;
+}
+
