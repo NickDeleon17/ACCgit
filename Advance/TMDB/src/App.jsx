@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import NavBar from "./assets/Components/NavBar.jsx";
+import Results from "./assets/Components/Results.jsx"
+import Error from "./assets/Components/Error.jsx"
+import './index.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+    return (
+        <Router>
+            <div className="App">
+               <NavBar className="NavBar"/>
+               <Routes>
+               <Route path="/" element={<Landing />} />
+               <Route path="/results" element={<Results />} />
+               <Route path="/oppsies" element={<Error />} />
+               </Routes>
+            </div>
+        </Router>
+    )
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+function Landing (){
+        return(
+            <div className="landing-page">
+                <h1 style={{color: '#646cff', fontSize: '43px'}}> 🎥 Welcome to the LAB 4 Movie Database! 🎥</h1>
+            </div>
+        )
+    }
 }
 
 export default App
