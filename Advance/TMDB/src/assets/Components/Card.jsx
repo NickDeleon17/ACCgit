@@ -7,11 +7,10 @@ function Card ({ movie }){
 
 return(
 
-    <MuiCard sx={{ maxWidth: 345, backgroundColor: 'transparent', boxShadow: '3px'}}>
+    <MuiCard sx={{ maxWidth: 385, backgroundColor: 'transparent'}}>
         <CardMedia
             component="img"
-            height="600"
-            width="500"
+            height="500"
             image={posterUrl}
             alt={movie.title}
             />

@@ -64,8 +64,9 @@ function Results () {
                 <Card key={movie.id} movie={movie} />
             ))
                 ) : (<p style={{fontSize: '32px', color: '#646cff'}}>
-                    <img src={Sad} alt="sad" style={{width: '1670px'}}/>
-                    That is not a movie, yet</p>
+                    <h2>Not Found</h2>
+                    <img src={Sad} alt="sad" style={{width: '1500px'}}/>
+                    That movie does not exist. <a href="/"> <u>Return Home</u></a></p>
                 )}
         </div>
     );
