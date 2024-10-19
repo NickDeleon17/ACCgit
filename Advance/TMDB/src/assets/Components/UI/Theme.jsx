@@ -6,12 +6,12 @@ const theme = createTheme({
         main: '#81D8D0'
     },
     secondary: {
-        main: '#F50057'
+        main: '#646cff'
     }
 }
 })
 
-function Theme ({ children }){
+function Theme (){
     return <ThemeProvider theme={theme}></ThemeProvider>
 }
 
